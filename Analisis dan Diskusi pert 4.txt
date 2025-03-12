@@ -1,0 +1,7 @@
+Analisis dan Diskusi
+
+MountainCar-v0 adalah lingkungan di mana sebuah mobil harus mencapai puncak bukit meskipun daya yang dimilikinya tidak cukup untuk langsung mencapainya. Lingkungan ini memiliki ruang keadaan dua dimensi, yaitu posisi mobil di sepanjang bukit dan kecepatannya. Agen dapat memilih salah satu dari tiga tindakan: bergerak ke kiri, diam di tempat, atau bergerak ke kanan. Untuk mencapai tujuan, agen harus menentukan aksi yang paling efektif guna mengoptimalkan pergerakan mobil.
+
+Dalam lingkungan ini, agen memperoleh reward standar sebesar -1 untuk setiap langkah yang diambil, yang mendorongnya menyelesaikan tugas secepat mungkin. Namun, dalam beberapa versi, reward ini dapat disesuaikan guna mempercepat proses pembelajaran. Tantangan utamanya adalah mobil harus berayun maju-mundur untuk mengumpulkan momentum yang cukup agar bisa mencapai puncak.
+
+Reinforcement Learning (RL) digunakan untuk melatih agen dalam lingkungan ini. Agen belajar dengan berinteraksi dengan lingkungan, mencoba berbagai tindakan, dan menerima umpan balik dalam bentuk reward atau punishment. Dengan menerapkan algoritma RL, agen dapat mengembangkan strategi optimal untuk mencapai tujuan, belajar dari pengalaman sebelumnya, dan menyesuaikan diri dengan perubahan kondisi. Karena sifat lingkungan yang kontinu, pendekatan Deep Q-Network (DQN) menjadi pilihan yang efektif. DQN mampu menangani ruang keadaan yang kompleks dan besar dengan memanfaatkan jaringan saraf untuk memperkirakan nilai Q, sehingga meningkatkan efisiensi agen dalam mencapai puncak
